@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicios de Pasados - Interactivo Mejorado</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+  .exercise { margin-bottom: 25px; }
+  .answer { display: none; font-weight: bold; margin-left: 10px; }
+  input { width: 150px; padding: 4px; margin-left: 5px; }
+  button { margin-left: 5px; }
+</style>
+</head>
+<body>
+
+<h1>Ejercicios de Pasados – Nivel B1/B2</h1>
+<p>Completa con pretérito perfecto, imperfecto o indefinido las siguientes frases:</p>
+
+<!-- Función para comprobar individualmente cada campo -->
+<script>
+function checkField(correctAnswer, inputId, answerId) {
+  let input = document.getElementById(inputId);
+  let userAnswer = input.value.trim().toLowerCase();
+  let answerSpan = document.getElementById(answerId);
+  answerSpan.style.display = 'inline';
+  if(userAnswer === correctAnswer.toLowerCase()) {
+    answerSpan.style.color = 'green';
+  } else {
+    answerSpan.style.color = 'red';
+  }
+}
+</script>
+
+<!-- Ejercicio 1 -->
+<div class="exercise">
+1. Cuando (ser, tú) <input id="ex1"> <button onclick="checkField('eras','ex1','ans1')">✔</button>, (ir, tú) <input id="ex2"> <button onclick="checkField('ibas','ex2','ans2')">✔</button> a Madrid todos los fines de semana. Ahora, ya no vas nunca.
+<span class="answer" id="ans1">Respuesta: eras</span>
+<span class="answer" id="ans2">Respuesta: ibas</span>
+</div>
+
+<!-- Ejercicio 2 -->
+<div class="exercise">
+2. Cuando (ser, vosotros) <input id="ex3"> <button onclick="checkField('erais','ex3','ans3')">✔</button> pequeños, una vez (ir, nosotros) <input id="ex4"> <button onclick="checkField('fuimos','ex4','ans4')">✔</button> todos juntos a Madrid y (pasarlo, nosotros) <input id="ex5"> <button onclick="checkField('lo pasamos','ex5','ans5')">✔</button> de maravilla.
+<span class="answer" id="ans3">Respuesta: erais</span>
+<span class="answer" id="ans4">Respuesta: fuimos</span>
+<span class="answer" id="ans5">Respuesta: lo pasamos</span>
+</div>
+
+<!-- Ejercicio 3 -->
+<div class="exercise">
+3. Los jugadores en el partido del domingo (pelearse, ellos) <input id="ex6"> <button onclick="checkField('se pelearon','ex6','ans6')">✔</button> en el campo. ¡Qué vergüenza!
+<span class="answer" id="ans6">Respuesta: se pelearon</span>
+</div>
+
+<!-- Ejercicio 4 -->
+<div class="exercise">
+4. De joven (comprar, yo) <input id="ex7"> <button onclick="checkField('compré','ex7','ans7')">✔</button> un coche y con él (ir, yo) <input id="ex8"> <button onclick="checkField('iba','ex8','ans8')">✔</button> cómodamente cada día a trabajar.
+<span class="answer" id="ans7">Respuesta: compré</span>
+<span class="answer" id="ans8">Respuesta: iba</span>
+</div>
+
+<!-- Ejercicio 5 -->
+<div class="exercise">
+5. La casa que (ver, nosotros) <input id="ex9"> <button onclick="checkField('vimos','ex9','ans9')">✔</button> aquella vez (ser) <input id="ex10"> <button onclick="checkField('era','ex10','ans10')">✔</button> diferente. Aquella (tener) <input id="ex11"> <button onclick="checkField('tenía','ex11','ans11')">✔</button> 3 dormitorios, (ser) <input id="ex12"> <button onclick="checkField('era','ex12','ans12')">✔</button> muy espaciosa y (estar) <input id="ex13"> <button onclick="checkField('estaba','ex13','ans13')">✔</button> en una zona muy tranquila.
+<span class="answer" id="ans9">Respuesta: vimos</span>
+<span class="answer" id="ans10">Respuesta: era</span>
+<span class="answer" id="ans11">Respuesta: tenía</span>
+<span class="answer" id="ans12">Respuesta: era</span>
+<span class="answer" id="ans13">Respuesta: estaba</span>
+</div>
+
+<!-- Ejercicio 6 -->
+<div class="exercise">
+6. ¿(Romperse, él) <input id="ex14"> <button onclick="checkField('se rompió','ex14','ans14')">✔</button> su ventilador? ¡Compre uno nuevo y barato en “Ventifácil”!
+<span class="answer" id="ans14">Respuesta: se rompió</span>
+</div>
+
+<!-- Ejercicio 7 -->
+<div class="exercise">
+7. Antes (ver, yo) <input id="ex15"> <button onclick="checkField('veía','ex15','ans15')">✔</button> mucho la tele. Ahora me conecto a Internet.
+<span class="answer" id="ans15">Respuesta: veía</span>
+</div>
+
+<!-- Ejercicio 8 -->
+<div class="exercise">
+8. Vosotros (estudiar) <input id="ex16"> <button onclick="checkField('habéis estudiado','ex16','ans16')">✔</button> hoy porque (tener, vosotros) <input id="ex17"> <button onclick="checkField('teníais','ex17','ans17')">✔</button> un examen.
+<span class="answer" id="ans16">Respuesta: habéis estudiado</span>
+<span class="answer" id="ans17">Respuesta: teníais</span>
+</div>
+
+<!-- Ejercicio 9 -->
+<div class="exercise">
+9. Esta mañana (llegar, ellos) <input id="ex18"> <button onclick="checkField('llegaron','ex18','ans18')">✔</button> tarde a clase porque (perder, ellos) <input id="ex19"> <button onclick="checkField('perdieron','ex19','ans19')">✔</button> el autobús.
+<span class="answer" id="ans18">Respuesta: llegaron</span>
+<span class="answer" id="ans19">Respuesta: perdieron</span>
+</div>
+
+<!-- Ejercicio 10 -->
+<div class="exercise">
+10. Ayer no (ir, yo) <input id="ex20"> <button onclick="checkField('fui','ex20','ans20')">✔</button> a la fiesta porque (estar, yo) <input id="ex21"> <button onclick="checkField('estaba','ex21','ans21')">✔</button> muy cansada.
+<span class="answer" id="ans20">Respuesta: fui</span>
+<span class="answer" id="ans21">Respuesta: estaba</span>
+</div>
+
+<!-- Ejercicio 11 -->
+<div class="exercise">
+11. Hace un rato (ver, yo) <input id="ex22"> <button onclick="checkField('vi','ex22','ans22')">✔</button> a un chico guapísimo en la calle. (Tener, él) <input id="ex23"> <button onclick="checkField('tenía','ex23','ans23')">✔</button> el pelo moreno y (ser, él) <input id="ex24"> <button onclick="checkField('era','ex24','ans24')">✔</button> bastante alto. También (llevar, él) <input id="ex25"> <button onclick="checkField('llevaba','ex25','ans25')">✔</button> un traje muy elegante.
+<span class="answer" id="ans22">Respuesta: vi</span>
+<span class="answer" id="ans23">Respuesta: tenía</span>
+<span class="answer" id="ans24">Respuesta: era</span>
+<span class="answer" id="ans25">Respuesta: llevaba</span>
+</div>
+
+<!-- Ejercicio 12 -->
+<div class="exercise">
+12. Anoche (acostarse, nosotros) <input id="ex26"> <button onclick="checkField('nos acostamos','ex26','ans26')">✔</button> pronto porque (irse) <input id="ex27"> <button onclick="checkField('se fue','ex27','ans27')">✔</button> la luz y no (poder, nosotros) <input id="ex28"> <button onclick="checkField('pudimos','ex28','ans28')">✔</button> ver la tele.
+<span class="answer" id="ans26">Respuesta: nos acostamos</span>
+<span class="answer" id="ans27">Respuesta: se fue</span>
+<span class="answer" id="ans28">Respuesta: pudimos</span>
+</div>
+
+<!-- Ejercicio 13 -->
+<div class="exercise">
+13. El año pasado (viajar, yo) <input id="ex29"> <button onclick="checkField('viajé','ex29','ans29')">✔</button> a Croacia y (gustar, a mí) <input id="ex30"> <button onclick="checkField('me gustó','ex30','ans30')">✔</button> un montón.
+<span class="answer" id="ans29">Respuesta: viajé</span>
+<span class="answer" id="ans30">Respuesta: me gustó</span>
+</div>
+
+<!-- Ejercicio 14 -->
+<div class="exercise">
+14. ¿Tú sabes cuándo (pintar) <input id="ex31"> <button onclick="checkField('pintó','ex31','ans31')">✔</button> Picasso el cuadro “Guernica”?
+<span class="answer" id="ans31">Respuesta: pintó</span>
+</div>
+
+<!-- Ejercicio 15 -->
+<div class="exercise">
+15. La película de anoche (empezar) <input id="ex32"> <button onclick="checkField('empezó','ex32','ans32')">✔</button> a las 10 y no (acabar) <input id="ex33"> <button onclick="checkField('acabó','ex33','ans33')">✔</button> hasta las 2 de la madrugada. ¡Qué larga!
+<span class="answer" id="ans32">Respuesta: empezó</span>
+<span class="answer" id="ans33">Respuesta: acabó</span>
+</div>
+
+</body>
+</html>
